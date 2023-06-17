@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="box-body">
+                <h1>Cálculo de Investimento</h1>
+                <div class="form">
+                    <h2>Aporte inicial</h2>
+                    <input type="text" class="form-control" id="x" placeholder="Aporte Inicial">
+                </div>
+                <div class="form">
+                    <h2>Aporte mensal</h2>
+                    <input type="text" class="form-control" id="y" placeholder="Aporte mensal">
+                </div>
+                <div class="form">
+                    <h2>Taxa</h2>
+                    <input type="text" class="form-control" id="i" placeholder="Taxa">
+                    <div class="form-check">
+                        <input class="form-check-input" id="inlineRadio1" type="radio" name="rbTaxa">
+                        <label class="form-check-label" for="inlineRadio1">Anual</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" id="inlineRadio2" type="radio" name="rbTaxa">
+                        <label class="form-check-label" for="inlineRadio2">Mensal</label>
+                    </div>
+                </div>
+                <div class="form">
+                    <h2>Período</h2>
+                    <input type="text" class="form-control" id="t" placeholder="Período">
+                    <div class="form-check">
+                        <input class="form-check-input" id="inlineRadio3" type="radio" name="rbPeriodo">
+                        <label class="form-check-label" for="inlineRadio3">Anos</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" id="inlineRadio4" type="radio" name="rbPeriodo">
+                        <label class="form-check-label" for="inlineRadio4">Meses</label>
+                </div>
+                <div class="form-another">
+                    <button id="calcular" class="form-button" onclick="calcular()">Calcular</button>
+                </div>
+                <div class="form3">
+                    <h2>Valor obtido será:</h2>
+                    <input type="text" class="form-control2" id="resposta" placeholder="Resultado" readonly>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+:root {
+    --background-color: #051b05;
+    --text-color: #8CD918;
+    --bordercolor: #69a50f;
+    --formcolor: #191a18;
+}
+
+
+body {
+    background: url("./imagens/6417740.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.box-body {
+    margin: 5%;
+    margin-top: 2%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #69a50f;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px #8CD918;
+}
+h1 {
+    font-size: 25px;
+}
+h2 {
+    font-size: medium;
+}
+
+.form {
+    background-color: var(--formcolor);
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #69a50f;
+    margin: 1%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.form-control {
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #69a50f;
+    box-shadow: 2px 2px 4px #8CD918;
+    margin-bottom: 2%;
+}
+
+.form-control2 {
+    
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #69a50f;
+    box-shadow: 2px 2px 4px #8CD918;
+    margin-bottom: 3%;
+}
+
+.form-another {
+    margin-left: 33%;
+}
+
+.form-button {
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #69a50f;
+    box-shadow: 2px 2px 4px #8CD918;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+.form-button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.form-check-input {
+    display: none;
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1%;
+
+}
+
+.form-check-label::before {
+    content: '';
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: var(--bordercolor);
+    transition: 0.3s ease-in-out;
+    border: 1px;
+}
+
+#inlineRadio1:checked+.form-check-label::before {
+    background-color: black;
+    box-shadow: inset 1px 1px 5px #8CD918, 1px 1px 5px #8CD918;
+}
+
+#inlineRadio2:checked+.form-check-label::before {
+    background-color: black;
+    box-shadow: inset 1px 1px 5px #8CD918, 1px 1px 5px #8CD918;
+}
+
+#inlineRadio3:checked+.form-check-label::before {
+    background-color: black;
+    box-shadow: inset 1px 1px 5px #8CD918, 1px 1px 5px #8CD918;
+}
+
+#inlineRadio4:checked+.form-check-label::before {
+    background-color: black;
+    box-shadow: inset 1px 1px 5px #8CD918, 1px 1px 5px #8CD918;
+}
